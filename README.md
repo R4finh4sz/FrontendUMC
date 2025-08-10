@@ -60,7 +60,3 @@ Atividade Avaliativa - Desenvolvimento de aplicações
 📘 Disciplina: Desenvolvimento de aplicações
 👨‍🏫 Professor: Fabio Codo
 👨‍🎓 Aluno: Rafael Souza Santana
-
-
-
-Perguntar ao ChatGPT
