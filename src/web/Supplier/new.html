@@ -1,0 +1,127 @@
+<html>
+
+<head>
+
+    <title>Novo Fornecedor</title>
+    <link rel="stylesheet" type="text/css" href="/src/css/estilo.css">
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.1.8/css/dataTables.dataTables.css" />
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.js"></script>
+    
+    <style>
+        .box12{
+          color: white;
+          position: absolute;
+          top: 60%;
+          left: 50%;
+          transform: translate(-50%,-50%);
+          background-color: rgba(0, 0, 0, 0.8);
+          background-color: rgba(20, 16, 56, 0.8);
+          padding: 15px;
+          border-radius: 50px;
+        }
+        fieldset{
+          border: 3px solid #0ef;
+          border-radius: 50px;
+        }
+        th{
+            padding: 12px;
+            border: 1px solid #0ef;
+            text-align: left;
+        }
+    
+        th {
+            background-color: rgb(24, 34, 126);
+            font-weight: bold;
+        }
+        .input-box{
+          position: relative;
+        }
+        .inputUser{
+          background: rgba(0, 0, 0, 0.8);
+          border: none;
+          outline: none;
+        }
+        
+      </style>
+</head>
+
+<body class="light-theme">
+  <div class="box12">
+      <form action="#">
+        <fieldset>
+          <h1>Novo Fornecedor</h1>
+          <table1 style="width: 800px;">
+            <div class="input-box">
+              <tr>
+                  <td><input type="text" id="txtId" disabled/></td>
+                  <td><label>Id</label></td>
+              </tr>
+          </div>
+              <div class="input-box">
+                  <tr>
+                      <td><input type="text" id="txtName" /></td>
+                      <td><label>Name</label></td>
+                  </tr>
+              </div>
+
+              <div class="input-box">
+                  <tr>
+                      <td><input type="text" id="txtRepresentative" /> </td>
+                      <td><label>Representative</label></td>
+                  </tr>
+              </div>
+              <div class="input-box">
+                <tr>
+                    <td><input type="text" id="txtEmail" /></td>
+                    <td><label>Email</label></td>
+                </tr>
+            </div>
+            <div class="input-box">
+              <tr>
+                  <td><input type="text" id="txtAddress" /></td>
+                  <td><label>Address</label></td>
+              </tr>
+          </div>
+              <div class="input-box">
+                <tr>
+                    <td><input type="text" id="txtTelephone" /></td>
+                    <td><label>Telephone</label></td>
+                </tr>
+            </div>
+
+
+          
+          <div class="input-box">
+            <tr>
+                <td><input type="text" id="txtWebsite" /></td>
+                <td><label>Website</label></td>
+            </tr>
+        </div>
+
+        
+            <tr>
+              <td colspan="2">
+                  <input type="button" id="btnCadastro" value="Gravar"class="btn-gravar"/><br><br>
+                  <input type="button"  id="btnCancelar"  value="Limpar"class="btn-limpar"/><br><br>
+                  <button type="submit" class="btn3">
+                      <a href="/menu.html" style="text-decoration: none;">Voltar</a>
+                  </button>
+              </td>
+          </tr>
+
+    </table>
+                  <div>
+                    <table id="tbSupplier" >
+                    </table>
+                  </div>
+        </fieldset>  
+    </form>
+</div>
+
+        <script src="/src/web/js/supplier.js"></script>
+        <noscript>You need to enable JavaScript to view the full site</noscript>
+    
+</body>
+
+</html>

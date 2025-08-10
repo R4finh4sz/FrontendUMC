@@ -1,0 +1,352 @@
+:root {
+    --ciano: #00eeff;
+    --white: #ffffff;
+    --black: #000000;
+    --degradado1:#1f293a;
+    --verm1:#ff0000;
+    --verm2:#5f0b0b;
+    --verde1:#00ff15;
+    --verde2:#0a6411;
+}
+* {
+    color: var(--fontColor);
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    background: var(--bg);
+}
+li {
+
+list-style: circle;
+
+}
+
+.list {
+
+list-style: square;
+
+}
+
+.light-theme {
+
+    --bg: var(--degradado1);
+    --fontColor: var(--white);
+    --btnBg: var(--black);
+    --btnFontColor: var(--white);
+}
+.dark-theme {
+    --bg: var(--black);
+    --fontColor: var(--white);
+    --btnBg: var(--white);
+    --btnFontColor: var(--black);
+
+}
+.btn{
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+}
+.btn {
+    position:absolute;
+    top: 20px;
+    left: 1850px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+}
+.btn:focus{outline-style: none;}
+
+.texto{
+    text-align: right;
+}
+
+.corazul{
+    color: blue;
+}
+
+.lora-class{
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.btn-gravar {
+    width: 100%;
+    height: 45px;
+    background: linear-gradient(var(--verde1),var(--verde2));
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 1em;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    
+    display: block; 
+}
+
+.btn-limpar {
+    width: 100%;
+    height: 45px;
+    background: linear-gradient(var(--verm1),var(--verm2));
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 1em;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    display: block; 
+}
+
+.btn-gravar:hover {
+    background-color: #45a049;
+}
+
+.btn-limpar:hover {
+    background-color: #e53935;
+}
+
+
+.btn3 {
+    text-align: center;
+    width: 30%;
+    height: 45px;
+    background: linear-gradient(var(--verm1),var(--verm2));
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 1em;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    margin: 0 auto;
+
+    display: block; 
+}
+
+.btn3:hover {
+    background-color: #45a049;
+}
+th {
+    background-color: #ffffff;
+    color: #000000;
+}
+form .inputUser {
+    color: white;
+    font-size: 15px;
+    width: 100%;
+}
+.box {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 500px;
+}
+
+.box a {
+    display: block;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.box1 {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 500px;
+}
+
+.inputUser {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+.box2 {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 600px;
+}
+.btn-digitar {
+    --fontColor: var(--white);
+    border: none;
+    padding: 5px 50px;
+    cursor: pointer;
+}
+
+.select-perfil{
+    padding: 5px 50px;
+}
+
+
+.input-box {
+    position: relative;
+    margin: 25px 0;
+}
+
+input {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #0ef;
+    outline: none;
+    border-radius: 40px;
+    font-size: 1em;
+    color: #fff;
+    padding: 0 20px;
+    transition: .5s ease;
+}
+
+input:focus,
+input:not(:placeholder-shown) {
+    border-color: #0ef;
+}
+
+label {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #aaa;
+    transition: 0.3s ease;
+    background: transparent;
+    padding: 0 5px;
+    pointer-events: none;
+}
+
+input:focus~label,
+input:not(:placeholder-shown)~label {
+    top: -10px;
+    font-size: 0.8em;
+    background: rgba(0, 0, 0, 0.8)1f293a;
+    color: #0ef;
+}
+
+.signup-link {
+    margin: 20px 0 10px;
+    text-align: center;
+}
+
+.signup-link a {
+    font-size: 1em;
+    color: #0ef;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.btn7 {
+    width: 100%;
+    height: 45px;
+    background: rgb(4, 179, 106);
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 1em;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+}
+.btn7:hover {
+    background-color: #05e23c;
+}
+
+.btn8 {
+    width: 100%;
+    height: 45px;
+    background: linear-gradient(var(--verm1),var(--verm2));
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 1em;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+}
+
+.btn8:hover {
+    background-color: #e4160f;
+}
+
+
+
+.btn2 {
+    width: 100%;
+    height: 45px;
+    background: rgb(34, 8, 148);
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 1em;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+}
+
+.btn2:hover {
+    background-color: #0059ff;
+}
+
+.btn9 {
+    width: 100%;
+    height: 45px;
+    background: linear-gradient(var(--ciano),var(--degradado1));
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 1em;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    text-align: center;
+    margin: 4px auto;
+    display: block; 
+}
+
+.btn9:hover {
+    background-color: #0059ff;
+}
+
+
+
+
+.input-box {
+    position: relative;
+    margin: 25px 0;
+}
+.cadastro-box {
+    position: absolute;
+    width: 400px;
+}
+
+input:focus~label {
+    top: 1px;
+    font-size: .8em;
+    background: #1f293a;
+    padding: 0 6px;
+    color: #0ef;
+}
+
+.box4 {
+    color: white;
+    background-color: rgba(20, 16, 56, 0.8);
+    padding: 15px;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    text-align: center;
+}
+

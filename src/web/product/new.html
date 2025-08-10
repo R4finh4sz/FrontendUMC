@@ -1,0 +1,108 @@
+<html>
+
+<head>
+
+    <title>Novo produto</title>
+    <link rel="stylesheet" type="text/css" href="/src/css/estilo.css" />
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.1.8/css/dataTables.dataTables.css" />
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.js"></script>
+    <style>
+        .box3{
+          color: white;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%,-50%);
+          background-color: rgba(0, 0, 0, 0.8);
+          background-color: rgba(20, 16, 56, 0.8);
+          padding: 15px;
+          border-radius: 50px;
+        }
+        fieldset{
+          border: 3px solid #0ef;
+          border-radius: 50px;
+          text-align: center;
+        }
+        th{
+            padding: 12px;
+            border: 1px solid #0ef;
+            text-align: left;
+        }
+    
+        th {
+            background-color: rgb(24, 34, 126);
+            font-weight: bold;
+        }
+        .input-box{
+          position: relative;
+        }
+        .select-perfil{
+            background: rgba(0, 0, 0, 0.8);;
+        }
+        
+        
+      </style>
+</head>
+
+<body class="light-theme">
+  <div class="box3">
+      <form action="#">
+        <fieldset>
+          <h1>Novo Produto</h1>
+          <table1 style="width: 400px;">
+            <div class="input-box">
+              <tr>
+                  <td><input type="text" id="txtId" disabled/></td>
+                  <td><label>Id</label></td>
+              </tr>
+          </div>
+              <div class="input-box">
+                  <tr>
+                      <td><input type="text" id="txtName" /></td>
+                      <td><label>Nome</label></td>
+                  </tr>
+              </div>
+
+              <div class="input-box">
+                  <tr>
+                      <td><input type="text" id="txtDescription" /></td>
+                      <td><label>Descrição</label></td>
+                  </tr>
+              </div>
+              <div class="input-box">
+                  <tr>
+                      <td><input type="text" id="txtPrice" /></td>
+                      <td><label>Price</label></td>
+                  </tr>
+              </div>
+              <div class="input-box">
+                <tr>
+                    <td><select id = "ddICategory"></select></td>
+                    <td><label>Category</label></td>
+                </tr>
+            </div>
+
+              
+              <tr>
+                  <td colspan="2">
+                      <input type="button" id="btnLogin" value="Gravar"class="btn-gravar"/><br><br>
+                      <input type="button"  id="btnCancelar"  value="Limpar"class="btn-limpar"/><br><br>
+                      <button type="submit" class="btn3">
+                          <a href="/menu.html" style="text-decoration: none;">Voltar</a>
+                      </button>
+                  </td>
+              </tr>
+            </table>
+            <div>
+              <table id="tbProduct" class="table table=striped table-bordered"></table>
+              <script src="/src/web/js/product.js"></script>
+            </div>
+        </fieldset>  
+    </form>
+</div>
+
+
+</body>
+
+</html>

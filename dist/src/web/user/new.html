@@ -1,0 +1,115 @@
+<html>
+<head>
+    <title>Gestão Usuarios</title>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.5/css/jquery.dataTables.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.5/js/jquery.dataTables.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="/estilo.0158be1f.css">
+    <style>.box2{
+            color: white;
+            position: absolute;
+            top: 55%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            background-color: rgba(0, 0, 0, 0.8);
+            background-color: rgba(20, 16, 56, 0.8);
+            padding: 15px;
+            border-radius: 50px;
+        }
+        fieldset{
+            border: 3px solid #0ef;
+            border-radius: 50px;
+        }
+     
+
+        th {
+            background-color: rgb(24, 34, 126);
+            font-weight: bold;
+        }
+        .inputBox{
+            position: relative;
+        }
+        .inputUser{
+        background: rgba(0, 0, 0, 0.8);
+        border: none;
+        outline: none;
+        }
+        .select-perfil{
+            background: rgba(0, 0, 0, 0.8);;
+        }</style>
+<script src="/estilo.0158be1f.js"></script><script src="/menu.js"></script></head>
+<body class="light-theme">
+    <div class="box2">
+        <form action="#">
+          <fieldset>
+            <h1>Novo Usuário</h1>
+            <table1 style="width: 400px;">
+                <div class="input-box">
+                    <tr>
+                        <td><input type="text" id="txtId" class="btn2" disabled=""></td>
+                        <td><label>Id</label></td>
+                    </tr>
+                </div>
+
+                <div class="input-box">
+                    <tr>
+                        <td><input type="text" id="txtName" class="btn2"></td>
+                        <td><label>Nome</label></td>
+                    </tr>
+                </div>
+
+                <div class="input-box">
+                    <tr>
+                        <td><input type="email" id="txtEmail" class="btn2"> </td>
+                        <td class="texto"><label>Email</label></td>
+                    </tr>
+                </div>
+                <div class="input-box">
+                    <tr>
+                        <td><input type="password" id="txtSenha" class="btn2"></td>
+                        <td><label>Password</label></td>
+                    </tr>
+                </div>
+
+                <div class="input-box">
+                    <td><label>Ativo</label></td>
+                    <td><input type="checkbox" id="chkAdmin" class="btn2"></td>
+                </div>
+
+                <div class="input-box">
+                    <label>Perfil:</label>
+                    <select class="select-perfil" id="ddIProfile">
+                        
+                    </select>
+                </div>
+                <tr>
+                    <td colspan="2">
+                        <input type="button" id="btnLogin" value="Gravar" class="btn-gravar"><br><br>
+                        <input type="button" id="btnCancelar" value="Limpar" class="btn-limpar"><br><br>
+                        <button type="submit" class="btn3">
+                            <a href="/menu.html" style="text-decoration: none;">Voltar</a>
+                        </button>
+                    </td>
+                </tr>
+    
+    <div>
+        <table id="tbUsers" class="display">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th>Email</th>
+                    <th>Password</th>
+                </tr>
+            </thead>
+            <tbody>
+        <script src="/user.0f8c674c.js"></script>
+        </tbody></table>
+    </div>
+
+</table1></fieldset>  
+</form>
+</div>
+</body>
+</html>
