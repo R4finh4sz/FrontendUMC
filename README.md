@@ -14,19 +14,6 @@ Este é o projeto **frontend web** da aplicação, desenvolvido com **HTML**, **
 
 ---
 
-## 📁 Estrutura Básica do Projeto
-
-├── index.html # Arquivo principal da interface
-├── index.js # Lógica JS para login, registro e interações
-├── package.json # Gerenciador de dependências e scripts
-└── README.md
-
-yaml
-Copiar
-Editar
-
----
-
 ## ⚙️ Instalação
 
 📥 Clone o repositório:
